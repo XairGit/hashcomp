@@ -16,5 +16,5 @@ fi
 if [ ! -z "$sumprog" ]; then
     "$sumprog" "$1" | cut -d " " -f1 | diff -i -Z - <(echo "$2")
 else
-    sha1sum "$1" | cut -d " " -f1 | diff -i -Z - <(echo "$2")
+    sha256sum "$1" | cut -d " " -f1 | diff -i -Z - <(echo "$2")
 fi

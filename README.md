@@ -11,7 +11,7 @@ Basic usage is simple:
 ~# hashcomp myfile 672cdc5386b5b07d69c5c11ec17c2fecbf326e75
 ```
 
-By default Hashcomp generates sha1 hashes for files via the sha1sum program.
+By default Hashcomp generates sha1 hashes for files via the sha256sum program.
 Hashcomp allows you to specify which program should generate the hash of the file via the `-p` command line option.
 
 ```
@@ -24,7 +24,7 @@ The script returns 0 if the hashes match, otherwise it prints a diff of the hash
 
 Hashcomp depends on the following utilities by default:
 
-1. GNU sha1sum
+1. GNU sha256sum
 2. GNU cut
 3. GNU diff
 
